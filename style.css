@@ -19,6 +19,22 @@
   --scanline:    rgba(0,255,65,0.03);
 }
 
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font-family: 'JetBrains Mono', monospace;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
 body {
   background: var(--bg);
   font-family: 'JetBrains Mono', 'Share Tech Mono', monospace;
@@ -187,7 +203,7 @@ body::after {
 .principle strong { display: block; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--green); margin-bottom: 4px; }
 
 /* RESET */
-.reset-btn { background: transparent; border: 1px solid var(--green-border); padding: 7px 24px; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; cursor: pointer; color: var(--text-dim); transition: all 0.2s; display: block; margin: 24px auto 0; }
+.reset-btn { -webkit-appearance: none; appearance: none; background: transparent; border: 1px solid var(--green-border); padding: 7px 24px; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; cursor: pointer; color: var(--text-dim); transition: all 0.2s; display: block; margin: 24px auto 0; border-radius: 0; outline: none; line-height: 1.4; }
 .reset-btn:hover { border-color: var(--green); color: var(--green); box-shadow: 0 0 10px rgba(0,255,65,0.15); }
 
 /* ANIMATIONS */
@@ -206,6 +222,8 @@ body::after {
 }
 
 .csv-btn {
+  -webkit-appearance: none;
+  appearance: none;
   background: transparent;
   border: 1px solid var(--green-border);
   padding: 7px 16px;
@@ -216,6 +234,9 @@ body::after {
   cursor: pointer;
   color: var(--green);
   transition: all 0.2s;
+  border-radius: 0;
+  outline: none;
+  line-height: 1.4;
 }
 .csv-btn:hover {
   border-color: var(--green);
