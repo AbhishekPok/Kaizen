@@ -53,14 +53,14 @@ function toggle(el) {
 
 function updateProgress() {
   const cats = {
-    career:    { ids: ['c1','c2','c3','c4','c5'], total: 5 },
+    career:    { ids: ['c1','c2','c3','c4'],      total: 4 },
     portfolio: { ids: ['p1','p2','p3','p4'],      total: 4 },
     health:    { ids: ['h1','h2','h3','h4','h5'], total: 5 },
     study:     { ids: ['s1','s2','s3'],           total: 3 }
   };
 
   let totalDone = 0;
-  const totalAll = 17;
+  const totalAll = 16;
 
   for (const [cat, cfg] of Object.entries(cats)) {
     const done = cfg.ids.filter(id =>
@@ -79,7 +79,7 @@ function updateProgress() {
 function saveStreak() {
   try {
     const done = document.querySelectorAll('.task.done').length;
-    if (done >= 10) {
+    if (done >= 9) {
       const today = new Date().toDateString();
       const cur = getStreak();
       const last = localStorage.getItem('kaizen_last_date');
